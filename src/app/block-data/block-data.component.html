@@ -1,0 +1,20 @@
+<div class="container">
+    <h2 *ngIf="blockchainData && blockchainData.result">{{ blockchainData.result }}</h2>
+  <div class="row" style="margin-top: 30px">
+      <div class="col-md-3 col-xs-6" *ngFor="let block of blockSize; let i=index">
+          <div class="card">
+              <div class="card-body">
+                  <h5 class="card-title">{{ block.blockNo }}</h5>
+                  <!-- <h5 class="card-title">{{ student.name }}</h5>
+                  <h6 class="card-subtitle">{{ student.enrollmentnumber }}</h6>
+                  <p class="card-text">{{ student.college }}</p>
+                  <p class="card-text">{{ student.university }}</p> -->
+                  <a class="btn btn-primary" href="#" >0X{{ block.blockHex }}</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+  
+    
+

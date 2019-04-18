@@ -17,22 +17,24 @@ import {
   MatIconModule,
   MatButtonModule,
   MatCardModule,
+  MatListModule,
   MatFormFieldModule } from '@angular/material';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BlockDataComponent } from './block-data/block-data.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
-    HomeComponent
+    HomeComponent,
+    BlockDataComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
-
-
     FormsModule,
     AppRoutingModule,
     ReactiveFormsModule,
@@ -44,6 +46,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatIconModule,
     MatButtonModule,
     MatCardModule,
+    MatListModule,
     MatFormFieldModule
   ],
   providers: [],
